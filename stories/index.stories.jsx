@@ -33,4 +33,12 @@ storiesOf("Magnifier", module)
 	))
 	.add("Different images", () => (
 		<Magnifier src={testImageSmall} zoomImgSrc={testImage} width={IMG_WIDTH} />
+	))
+	.add("Rotation Sample", () => (
+		<Magnifier
+			className="rotation-0"
+			src={testImageSmall}
+			zoomImgSrc={testImage}
+			width={IMG_WIDTH}
+		/>
 	));

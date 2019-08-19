@@ -26,3 +26,15 @@
 		opacity: 1; // Needed for transition
 	}
 }
+
+@mixin rotate($deg) {
+	transform: rotate($deg);
+}
+
+.rotation-0 {
+	img,
+	.magnifier-image,
+	.magnifying-glass {
+		@include rotate(90deg);
+	}
+}
